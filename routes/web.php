@@ -17,6 +17,18 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/uses', function () {
+    return view('uses');
+});
+
+Route::get('/blog', function () {
+    return view('blog');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
